@@ -32,7 +32,7 @@ const mapDispatchToProps = (dispatch, props) => {
             //     }
             // })
 
-            debugger;
+            
             // dispatch({
             //     type: FETCH_REQUEST, params
             // })

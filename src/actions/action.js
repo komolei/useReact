@@ -7,7 +7,7 @@ import api from '../fetch/api'
 // update 2018.8.25
 
 export const getSlidePhoto = (params) => async (dispatch) => {
-    debugger;
+    
     console.log(222222222222);
     try {
         console.log(11111111111111111);

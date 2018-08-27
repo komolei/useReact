@@ -3,7 +3,7 @@ import { call, put, takeEvery, takeLatest } from 'redux-saga/effects';
 import api from '../fetch/api';
 import { changeInfo } from '../actions/action';
 function* fetchInfo(action) {
-    debugger;
+    
     try {
         console.log('action params is', action);
         yield put({ type: 'FETCH_BEGIN' })
