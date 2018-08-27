@@ -20,5 +20,5 @@
 
 - use develop branch to develop 
 - use master to push service usually
-
+- don't forget merge
 ## MIT 
