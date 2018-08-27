@@ -18,7 +18,7 @@
 
 ## other
 
-> use develop branch to develop 
-> use master to push service usually
+- use develop branch to develop 
+- use master to push service usually
 
 ## MIT 
