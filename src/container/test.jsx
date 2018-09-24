@@ -32,7 +32,7 @@ const mapDispatchToProps = (dispatch, props) => {
             //     }
             // })
 
-            
+
             // dispatch({
             //     type: FETCH_REQUEST, params
             // })

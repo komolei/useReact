@@ -3,8 +3,9 @@ import ReactDom from 'react-dom'
 import { hot } from 'react-hot-loader';
 
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import { Layout, Menu, Breadcrumb, Icon } from 'antd';
+import { Layout, Menu, Breadcrumb, Icon, message } from 'antd';
 import Test from '../container/test'
+import SignUp from '../container/signUp'
 import '../scss/layout.scss';
 const { SubMenu } = Menu;
 export default hot(module)(class AppLayout extends React.Component {
@@ -176,6 +177,7 @@ export default hot(module)(class AppLayout extends React.Component {
   initAsideNavList = () => {
     this.setState({ asideNavList: this.state.totalAsideNavList.totalManageC })
   }
+  
   // componentWillMount = () => { // 即将移除这个方法，所以要写到constructor那边
   // this.initAsideNavList();   console.log('1'); }
 
@@ -185,6 +187,7 @@ export default hot(module)(class AppLayout extends React.Component {
     console.log('2');
     return (
       <Layout>
+        {/* <SignUp /> */}
         <Header className="header">
           <div className="logo">
             <Icon
@@ -207,6 +210,7 @@ export default hot(module)(class AppLayout extends React.Component {
               <Menu.Item key={item.name}>{item.alias}</Menu.Item>
             ))}
           </Menu>
+
         </Header>
         <Layout>
           <Sider

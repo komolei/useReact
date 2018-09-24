@@ -3,7 +3,7 @@ import qs from 'qs';
 
 let urlPrefix = {
     backend: '',
-    plat: '', // request address 
+    plat: 'http://localhost:5000', // request address 
     upload: '',
     docker: '',
     open: ''
@@ -45,4 +45,15 @@ export default {
             'Content-Type': 'application/json'
         })
     },
+
+    signUp(params) {
+        return fetch(`${urlPrefix.plat}/user/signUp`, params, 'POST', {
+            'Content-Type': 'application/json'
+        })
+    },
+    login(params) {
+        return fetch(`${urlPrefix.plat}/user/login`, params, 'POST', {
+            'Content-Type': 'application/json'
+        })
+    }
 }
