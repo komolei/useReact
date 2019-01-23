@@ -13,24 +13,27 @@ const dev = {
     // devtool: 'eval-source-map', // delete unuse code // find it doesn't work
     devServer: {
         contentBase: path.resolve(process.cwd(), 'dist'),
+        historyApiFallback: true,
+        watchContentBase: true,
         compress: true,
         port: 3000,
         headers: {
             "X-Custom-Foo": "komolei"
         },
         hot: true,
-        index: '/dist/index.html',
+        // index: '/dist/index.html',
+        index:'/',
         inline: true,
         lazy: false,
         open: true,
         public: '',
-        publicPath: '/dist/',
-        openPage: 'dist/index.html'
+        publicPath: '/',
+        // openPage: 'dist/index.html'
     },
     plugins: [
         new webpack.NamedModulesPlugin(),
         new webpack.HotModuleReplacementPlugin()
-    ]
+    ],
     // optimize performance
     // performance: {
     //     hints: "error",
@@ -38,7 +41,7 @@ const dev = {
     //     maxAssetSize: 100000
     // },
 
-    // watch: true,
+    watch: true,
     // watchOptions: {
     //     aggregateTimeout: 300,
     //     poll: 2000,

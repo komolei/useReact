@@ -32,7 +32,7 @@ module.exports = {
         auxiliaryComment: 'Test commit',
         path: path.resolve(process.cwd(), 'dist'),
         pathinfo: true, // 适用于开发环境，告诉webpack引入bundle的注释
-        publicPath: '/dist/',
+        publicPath: '/',
         // sourceMapFilename: "[file].map",
     },
     module: {
